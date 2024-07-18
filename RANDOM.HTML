@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Password Generator</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-black text-white">
+    <div class="min-h-screen flex flex-col justify-center items-center">
+        <!-- Logo -->
+        <div class="mb-6">
+            <img src="https://img.freepik.com/free-vector/cartoon-style-robot-vectorart_78370-4103.jpg?t=st=1721295549~exp=1721299149~hmac=735f2cf5fbcbd9aef0f6ec7e311944dce99d419a05535e7d1f4a3b1c2872a95f&w=740" alt="Logo" class="h-20 w-25">
+        </div>
+        
+        <!-- Title -->
+        <h1 class="text-2xl font-bold mb-4 bg-green-600 py-2 px-4 rounded-full">Random Password Generator</h1>
+        
+        <!-- Subtitle -->
+        <p class="text-center mb-8">Secure, Strong and Unique passwords to keep your accounts safe online</p>
+        
+        <!-- Password Display -->
+        <div class="mb-4 w-full max-w-lg">
+            <div class="bg-green-500 rounded-full flex items-center p-2 ">
+                <input type="text" class="text-black bg-green-500 w-full" >
+            </div>
+        </div>
+        
+        <!-- Generate Button -->
+        <button class="bg-green-600 text-white py-2 px-6 rounded-full mb-8 hover:bg-green-500">Generate</button>  
+        <!-- Options -->
+       
+        <div class="bg-black border border-green-500 rounded-lg p-4 w-full max-w-lg">
+            <div class="flex  justify-between mb-4">
+                <div class="bg-green-500 rounded ">    
+                        <span">Password Length (6-64)</span> </div>
+                <input type="number" min="6" max="64" value="20" class="w-16 bg-black text-white border border-green-500 rounded px-2 text-center">
+            </div>
+            <div class="mb-4">
+                <input type="range" min="6" max="64" value="20" class="w-full">
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+                 <label class="flex items-center space-x-2" >
+                    <input type="checkbox" class="form-checkbox text-green-600 bg">
+                    <span>Uppercase (ABC)</span>
+                </label> 
+                <label class="flex items-center space-x-2">
+                    <input type="checkbox" class="form-checkbox text-green-600">
+                    <span>Lowercase (abc)</span>
+                </label>
+                <label class="flex items-center space-x-2">
+                    <input type="checkbox" class="form-checkbox text-green-600">
+                    <span>Numbers (123)</span>
+                </label>
+                <label class="flex items-center space-x-2">
+                    <input type="checkbox" class="form-checkbox text-green-600">
+                    <span>Characters (#&)</span>
+                </label>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>
